@@ -1,0 +1,42 @@
+.plant-table {
+    border: 2px solid gray;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    overflow-y: scroll;
+    display: inline-block;
+    max-height: 300px;
+}
+
+.plant-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.plant-table th, .plant-table td {
+    padding: 12px 15px;
+    position: sticky;
+}
+
+.plant-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.plant-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.plant-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.plant-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}

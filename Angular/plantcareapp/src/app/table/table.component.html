@@ -1,0 +1,21 @@
+<table class="plant-table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Last Watered Date</th>
+            <th scope="col">Watering Frequency</th>
+            <th scope="col">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let plant of plants">
+            <td>{{plant.name}}</td>
+            <td>{{plant.lastWateredDate}}</td>
+            <td>{{plant.wateringFreq}}</td>
+            <td style="background-color: {{plant.status}}; border: 1px solid darkgrey;"></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<h3>Upload Data File</h3>
+<input type="file" id="file" name="file" (change)="addNewPlants($event)">
